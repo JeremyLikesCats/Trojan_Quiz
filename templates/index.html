@@ -1,0 +1,45 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="https://pyscript.net/releases/2026.2.1/core.css" />
+<script type="module" src="https://pyscript.net/releases/2026.2.1/core.js"></script>
+
+<style>
+    body
+    {
+        font-family: 'Comic Sans MS';
+        text-align:center;
+        margin: auto;
+    }
+
+    #question_container { background-color: azure; color:blue }
+
+    button
+    { 
+        background-color: darkorchid; 
+        color:black;
+        border-radius: 5px;
+        border: thick blue solid;
+        display: block;
+        margin-bottom:1em;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+    <script type="py" src="./static/quiz,py"> </script>
+<div id="question_container">
+    <div id="question">What is phishing?</div>
+
+    <button id="answer1">A fun activity you do on weekends</button>
+    <button id="answer2">A delicious way to get calories</button>
+    <button id="answer3">Sending network communications aiming to steal personal data</button>
+    <button id="answer4">Redirecting network traffic to fraudulent websites</button>
+</div>
+
+</body>
+
+</html>
