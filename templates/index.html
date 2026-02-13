@@ -1,45 +1,28 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="https://pyscript.net/releases/2026.2.1/core.css" />
-<script type="module" src="https://pyscript.net/releases/2026.2.1/core.js"></script>
-
-<style>
-    body
-    {
-        font-family: 'Comic Sans MS';
-        text-align:center;
-        margin: auto;
-    }
-
-    #question_container { background-color: azure; color:blue }
-
-    button
-    { 
-        background-color: darkorchid; 
-        color:black;
-        border-radius: 5px;
-        border: thick blue solid;
-        display: block;
-        margin-bottom:1em;
-    }
-
-</style>
+<link rel="stylesheet" href="/static/questions.css" />
 
 
 </head>
 
 <body>
     <script type="py" src="./static/quiz.py"> </script>
-<div id="question_container">
-    <div id="question">What is phishing?</div>
+    <div id="question_container">
+        <img id="question_image" src="" alt="Question Image"></img>
+        <div id="question_title">QUESTION TITLE</div>
 
-    <button id="answer1">A fun activity you do on weekends</button>
-    <button id="answer2">A delicious way to get calories</button>
-    <button id="answer3">Sending network communications aiming to steal personal data</button>
-    <button id="answer4">Redirecting network traffic to fraudulent websites</button>
-</div>
+        <div id="question_options">
+            <button id="option1" onclick="checkOption(0)">OPTION 1</button>
+            <button id="option2" onclick="checkOption(1)">OPTION 2</button>
+            <button id="option3" onclick="checkOption(2)">OPTION 3</button>
+            <button id="option4" onclick="checkOption(3)">OPTION 4</button>
+        </div>
+        
+    </div>
 
 </body>
+
+<script type="text/javascript" src="/static/quiz.js"></script>
 
 </html>
