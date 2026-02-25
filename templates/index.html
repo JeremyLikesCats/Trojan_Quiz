@@ -10,17 +10,27 @@
 
 <body>
     <script type="py" src="./static/quiz.py"> </script>
-    <div id="question_container">
-        <img id="question_image" src="" alt="Question Image"></img>
-        <div id="question_title">QUESTION TITLE</div>
+    <div id="header">
 
-        <div id="question_options">
-            <button id="option1" onclick="checkOption(0)">OPTION 1</button>
-            <button id="option2" onclick="checkOption(1)">OPTION 2</button>
-            <button id="option3" onclick="checkOption(2)">OPTION 3</button>
-            <button id="option4" onclick="checkOption(3)">OPTION 4</button>
+    </div>
+    <div id="question_container">
+        <div id="question">
+            <img id="question_image" src="" alt="Question Image"></img>
+            <div id="question_content">
+                <div id="question_title">QUESTION TITLE</div>
+
+                <div id="question_options">
+                    <button id="option1" onclick="checkOption(0)">OPTION 1</button>
+                    <button id="option2" onclick="checkOption(1)">OPTION 2</button>
+                    <button id="option3" onclick="checkOption(2)">OPTION 3</button>
+                    <button id="option4" onclick="checkOption(3)">OPTION 4</button>
+                </div>
+            </div>
         </div>
-        
+
+    </div>
+    <div id="footer">
+
     </div>
 
 </body>
