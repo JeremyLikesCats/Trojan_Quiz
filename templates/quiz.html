@@ -1,0 +1,58 @@
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/questions.css" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+</style>
+
+</head>
+
+<body>
+    <script type="py" src="./static/quiz.py"> </script>
+    <div id="cat_dancing">
+        <img src="/static/images/cat_dancing.gif" alt="cat dancing">
+    </div>
+    <div id="timer_low_overlay"></div>
+    <div id="header">
+        <div id="header_question" class="header_text">
+            0/0
+        </div>
+        <div id="header_timer"class="header_text">
+            0
+        </div>
+        <div id="header_score"class="header_text">
+            Score: 0
+        </div>
+    </div>
+    <div id="question_container">
+        <div id="question">
+            <img id="question_image" src="" alt="Question Image"></img>
+            <div id="question_content">
+                <div id="question_title">QUESTION TITLE</div>
+
+                <div id="question_options">
+                    <button id="option1" onclick="checkOption(0)">OPTION 1</button>
+                    <button id="option2" onclick="checkOption(1)">OPTION 2</button>
+                    <button id="option3" onclick="checkOption(2)">OPTION 3</button>
+                    <button id="option4" onclick="checkOption(3)">OPTION 4</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+
+    </div>
+    <div id="confetti" style="position: absolute; bottom: 0; left: 0; transform: translate(-25%, 30%); z-index: -1;">
+            <img src="/static/images/confetti_launcher.png" alt="confetti launcher">
+     </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script type="text/javascript" src="/static/quiz.js"></script>
+
+</html>
